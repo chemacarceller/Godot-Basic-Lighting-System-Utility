@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bcic0cj1av3e2"]
+
+[ext_resource type="Script" uid="uid://mxv0xa0qxvjn" path="res://main/levels/mainlevel/lighting/lighting.gd" id="1_aqmkn"]
+[ext_resource type="Environment" uid="uid://bxnp0owt52yky" path="res://main/levels/mainlevel/lighting/main_environment.tres" id="2_p0vmr"]
+
+[node name="Lighting" type="Node3D" unique_id=874770128]
+script = ExtResource("1_aqmkn")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1821097253]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+light_color = Color(0.8863183, 0.9072041, 0.9683966, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1958442383]
+environment = ExtResource("2_p0vmr")
